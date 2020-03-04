@@ -2,6 +2,15 @@
 
 cleanvid is a little script to mute profanity in video files in a few simple steps:
 
+## Updated functionality
+
+1. The user can simple call cleanvid.py and follow it with a list of video files. A .srt file will be generated for only the muted words that includes the .forced suffix that Plex recognizes, along with a complete .srt file without the suffix.
+2. You can Ctrl-C to cancel processing.
+3. Attempts to extract and use embedded subtitles.
+4. Fixes some subtitle parsing problems by attempting to extrapolate the file encoding (requires python-magic).
+
+## Original options
+
 1. The user provides as input a video file and matching .srt subtitle file. If subtitles are not provided, [`subliminal`](https://github.com/Diaoul/subliminal) is used to attempt to download the best matching .srt file.
 2. [`pysrt`](https://github.com/byroot/pysrt) is used to parse the .srt file, and each entry is checked against a [list](swears.txt) of profanity or other words or phrases you'd like muted. Mappings can be provided (eg., map "sh*t" to "poop"), otherwise the word will be replaced with *****.
 3. A new "clean" .srt file is created. with *only* those phrases containing the censored/replaced objectional language.
@@ -18,6 +27,7 @@ You can then use your favorite media player to play the cleaned video file toget
 * [delegator.py](https://github.com/kennethreitz/delegator.py)
 * [pysrt](https://github.com/byroot/pysrt)
 * [subliminal](https://github.com/Diaoul/subliminal)
+* [python-magic/libmagic](https://github.com/ahupp/python-magic)
 
 ## usage
 
@@ -25,6 +35,10 @@ You can then use your favorite media player to play the cleaned video file toget
 $ ./cleanvid.py --help
 usage: cleanvid.py [-h] [-s <srt>] [-i <input video>] [-o <output video>]
                    [-w <profanity file>] [-l <language>]
+                   [files [files ...]]
+
+positional arguments:
+  files                 enter space-separated file list instead of parameters
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -47,7 +61,7 @@ If you'd like to help improve cleanvid, pull requests will be welcomed!
 
 ## Authors
 
-* **Seth Grover** - *Initial work* - [mmguero](https://github.com/mmguero)
+* **Clifford B. Brown** - *Initial work* - [mmguero](https://github.com/mmguero)
 
 ## License
 

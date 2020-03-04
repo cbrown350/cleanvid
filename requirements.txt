@@ -2,3 +2,5 @@ babelfish
 subliminal
 pysrt
 delegator.py
+python-magic
+libmagic
