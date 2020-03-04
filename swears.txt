@@ -315,7 +315,7 @@ freakyfucker
 freakyfuckers
 fucck
 fuccks
-fuck
+fuck|freak
 fucka
 fuckable
 fuckables
@@ -349,11 +349,11 @@ fuckdollies
 fuckdolly
 fuckdub
 fuckdubs
-fucked
+fucked|messed
 fuckedup
 fuckedups
 fuckem
-fucker
+fucker|freaker
 fuckers
 fuckersucker
 fuckery
@@ -374,7 +374,7 @@ fuckher
 fuckhers
 fuckhole
 fuckies
-fuckin
+fuckin|freakin
 fuckina
 fuckinas
 fucking
@@ -385,7 +385,7 @@ fuckinnuts
 fuckinright
 fuckinrights
 fuckins
-fuckit
+fuckit|screwit
 fuckits
 fuckknob
 fuckknobs
@@ -410,7 +410,7 @@ fuckpig
 fuckpigs
 fuckpuppet
 fuckpuppets
-fucks
+fucks|freaks
 fucksome
 fuckstick
 fucksticks

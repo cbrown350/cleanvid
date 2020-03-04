@@ -3,4 +3,4 @@
 *.mp4
 *.mkv
 *.py_streaminfo
-
+**/__pycache__
